@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="currency.css" />
+
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container" id="topContainer">
+        <div class="title">Moeda a ser Convertida</div>
+        <select name = "currency" id="currency" >
+          <option selected>Open this select menu</option>
+          <option value="BTC" id="BTC" onclick="exchance()">Bitcoin (BTC)</option>
+          <option value="ETH" id="ETH" onclick="exchance()">Ethereum (ETH)</option>
+          <option value="GALA" id="GALA" onclick="exchance()">GALA</option>
+          <option value="SAND" id="SAND" onclick="exchance()">Sandbox</option>
+          <option value="BNB" id="BNB" onclick="exchance()">Binance Coin</option>
+          <option value="R$" id="R$" onclick="exchance()">Real (R$)</option>
+          <option value="$" id="$" onclick="exchance()">Dolar ($)</option>
+          <option value="€" id="€" onclick="exchance()">Euro (€)</option>
+        </select>
+        <br />
+        <br />
+        <div class="title">Quantidade da Moeda</div>
+        <div class="inputContainer">
+          <span>$</span>
+          <input font-weight: bolder
+            onkeyup="exchance()"
+            type="text"
+            id="billTotalInput"
+            placeholder=" 0.00"
+          />
+        </div>
+        
+      </div>
+      <div class="container">
+        <div class="title">Converções</div>
+        <div class="inputContainer">
+          
+          <img  src="Componentes/bitcoin-brands.svg"  width="22"><br>
+          <span id = "space"></span>
+          <span id="idUm" ></span>
+          
+        </div>
+        <br />
+        <div class="inputContainer">
+          <img src="Componentes/ethereum.svg" width="15" alt="">
+          <span id = "space"></span>  
+          <span id="idDois" ></span>
+          
+          
+        </div>
+        <br />
+        <div class="inputContainer">
+          <img src="Componentes/galapng.png" width="20" alt=""> 
+          <span id = "space"></span> 
+          <span id="idTres"></span>
+           
+          
+        </div>
+        <br />
+        <div class="inputContainer">
+          <img src="Componentes/sandbox.png" width="20" alt=""> 
+          <span id = "space"></span> 
+          <span id="idQuatro"></span>
+          
+        </div>
+        <br />
+        <div class="inputContainer">
+           <img src="Componentes/binance-coin-bnb-logo-97F9D55608-seeklogo.com.png" width="20" alt="">  
+          <span id = "space"></span>
+           <span id="idCinco"></span>
+         
+         
+        </div>
+        <br />
+        <div class="inputContainer">
+          <img src="Componentes/coin.png" width="20" alt=""> 
+          <span id = "space"></span> 
+          <span id="idSeis"></span>
+         
+         
+        </div>
+        <br />
+        <div class="inputContainer">
+           <img src="Componentes/euro.png" width="20" alt=""> 
+           <span id = "space"></span> 
+          <span id="idSete"></span>
+          
+         
+        </div>
+         <br />
+        <div class="inputContainer">
+          <img src="Componentes/real.png" width="20" alt="">  
+          <span id = "space"></span>
+          <span id="idOito"></span>
+           
+        
+        </div>
+      </div>
+      
+        
+      </div>
+    </div>
+    <script type="text/javascript" src="currency.js"></script>
+  </body>
+</html>
